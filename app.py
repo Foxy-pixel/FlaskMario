@@ -47,7 +47,7 @@ def buscar():
         con.reconnect()
 
     cursor = con.cursor()
-    cursor.execute("SELECT * FROM tst0_cursos ORDER BY Id_Curso DESC")
+    cursor.execute("SELECT * FROM sensor_log ORDER BY Id_Log DESC")
     registros = cursor.fetchall()
 
     con.close()
@@ -63,7 +63,7 @@ def registrar():
 
     cursor = con.cursor()
 
-    sql = "INSERT INTO tst0_cursos (Nombre_Curso, Telefono) VALUES (%s, %s)"
+    sql = "INSERT INTO sensor_log (Nombre_Curso, Telefono) VALUES (%s, %s)"
     val = (args["curso"], args["telefono"])
     cursor.execute(sql, val)
     
