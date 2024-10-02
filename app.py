@@ -71,10 +71,10 @@ def registrar():
     con.close()
 
     pusher_client = pusher.Pusher(
-        app_id = "1872172",
-        key = "ab077c6305428af0579b",
-        secret = "a2f133d9ea7bb1f9e37e",
-        cluster = "mt1",
+        app_id = "1766031",
+        key = "75c20f55afe54f98e3ce",
+        secret = "29cf7167529f0d20916a",
+        cluster = "us2",
         ssl=True
     )
 
