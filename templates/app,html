@@ -12,7 +12,7 @@
 <body>
     <div class="container mt-5">
         <h2>Inscripción a Curso</h2>
-        <small>Saul Mario Antonio Mejia Valadez 7B</small>
+        <small>Mario Antonio Mejia Valadez</small>
         <form action="/registrar" method="GET" id="formInscripcion">
             <div class="mb-3">
                 <label for="curso" class="form-label">Curso</label>
@@ -98,9 +98,9 @@
 
             Pusher.logToConsole = true
             
-           var pusher = new Pusher('ab077c6305428af0579b', {
-                  cluster: 'mt1'
-                });
+           var pusher = new Pusher('75c20f55afe54f98e3ce', {
+                cluster: 'us2'
+            });
 
             // Canal ---> Donde se concentran los hilos con los clientes conectados
             var channel = pusher.subscribe("canalRegistrosInscripcionCursos");
